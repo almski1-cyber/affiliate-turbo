@@ -1,0 +1,6 @@
+{
+  "appId": "com.affiliateturbo.app",
+  "appName": "Affiliate-Turbo",
+  "webDir": ".",
+  "bundledWebRuntime": false
+}

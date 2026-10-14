@@ -1,4 +1,4 @@
-name: Build Final AAB
+name: Final AAB Build
 on: [push, workflow_dispatch]
 jobs:
   build:
@@ -13,6 +13,7 @@ jobs:
           java-version: 17
           distribution: temurin
       - run: npm install
+      - run: mkdir -p www && cp index.html www/ || echo "no index"
       - run: rm -rf android
       - run: npx cap add android
       - run: npx cap sync

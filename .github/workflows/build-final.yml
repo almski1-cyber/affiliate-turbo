@@ -21,4 +21,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: AffiliateTurbo-AAB
-          path: android/app/build/outputs/bundle/debug/*.aab
+          path: android/app/build/outputs/apk/debug/*.apk
